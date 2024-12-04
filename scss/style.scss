@@ -32,6 +32,7 @@ body {
     letter-spacing: 0.02em;
     color: #fff;
     padding: 8px 54px;
+    cursor: pointer;
 }
 .btn_transparent {
     border-radius: 4px;
@@ -52,6 +53,7 @@ body {
     letter-spacing: 0.02em;
     
     padding: 8px 54px;
+    cursor: pointer;
 }
 
 //fonts 
@@ -89,5 +91,6 @@ body {
 @import '_wins.scss';
 @import '_about.scss';
 @import '_rew.scss';
+@import '_contacts.scss';
 
 @import '_media.scss';
