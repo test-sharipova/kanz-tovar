@@ -121,9 +121,7 @@ body {
         }
     }
 }
-.mobile {
-    display: none;
-}
+
 
 
 @import '_header.scss';
@@ -134,5 +132,9 @@ body {
 @import '_rew.scss';
 @import '_contacts.scss';
 @import '_footer.scss';
+@import '_catalog.scss';
+.mobile {
+    display: none;
+}
 
 @import '_media.scss';

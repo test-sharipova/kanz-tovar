@@ -114,6 +114,19 @@ $(document).ready(function(){
             }
             
           });
+
+          gsap.from('.catalog__item', {
+            opacity: 0,
+            xPercent: 100,
+            stagger: 0.3,
+            scrollTrigger: {
+              trigger: '.catalog',
+              start: '30% bottom', 
+             
+              toggleActions: 'play none none reverse',
+            }
+            
+          });
         
       }
       animation();

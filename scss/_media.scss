@@ -28,6 +28,11 @@
             }
         }
     }
+    .footer {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+    }
 }
 @media screen and (max-width:767px) {
     .container {
@@ -261,6 +266,16 @@
             &-show {
                 max-height: 500px;
                 
+            }
+        }
+    }
+    .catalog {
+        &__item {
+            &__img {
+                height: 250px;
+            }
+            &__title {
+                margin-top: 7px;
             }
         }
     }
