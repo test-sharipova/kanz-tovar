@@ -279,6 +279,23 @@
             }
         }
     }
+    .breadcrumbs {
+        gap: 6px;
+        li {
+            gap: 6px;
+            a {
+                font-size: 13px;
+            }
+            &::after {
+                font-size: 13px;
+            }
+        }
+    }
+    .catalog-category {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        }
+    }
     .desktop {
         display: none;
     }
