@@ -33,6 +33,14 @@
             flex-wrap: wrap;
         }
     }
+    .catalog-single {
+        &__content {
+            padding-top: 0;
+        }
+        &__wrapper {
+            gap: 40px;
+        }
+    }
 }
 @media screen and (max-width:767px) {
     .container {
@@ -294,6 +302,14 @@
     .catalog-category {
         &__wrapper {
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        }
+    }
+    .catalog-single {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__img {
+            height: 170px;
         }
     }
     .desktop {

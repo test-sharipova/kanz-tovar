@@ -3,12 +3,30 @@
     margin: 0;
     padding: 0;
 }
-
+html {
+    height: 100%;
+}
 body {
     font-family: "Raleway", ui-sans-serif, system-ui, sans-serif;
     color: #000;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
+main {
+    flex-grow: 1;
+}
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+button, input, select {
+    font-family: inherit;
+}
 .container {
     width: 95%;
     max-width: 1161px;
