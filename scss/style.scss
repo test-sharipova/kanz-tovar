@@ -121,7 +121,38 @@ body {
         }
     }
 }
-
+.breadcrumbs {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    li {
+        display: flex;
+        gap: 12px;
+        a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 140%;
+        }
+        &:after {
+            content: '—';
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 140%;
+        }
+        &:last-child {
+            &:after {
+                display: none;
+            }
+            a {
+                color: #909090;
+            }
+        }
+    }
+}
 
 
 @import '_header.scss';
