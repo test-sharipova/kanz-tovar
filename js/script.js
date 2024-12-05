@@ -117,4 +117,12 @@ $(document).ready(function(){
         
       }
       animation();
+
+      //footer catalog show
+      $('.footer__link__catalog').on('click', function(){
+        $('.footer__catalog-links').toggleClass('footer__catalog-links-show')
+      });
+
+
+
   });

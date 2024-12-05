@@ -84,6 +84,47 @@ body {
     font-weight: 500;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    opacity: 0;
+    clip: rect(0,0,0,0);
+    color: transparent;
+    font-size: 1px;
+}
+.soc {
+    display: flex;
+    gap: 12px;
+    &__item {
+        width: 32px;
+        height: 32px;
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: opacity .3s;
+        &_vk {
+            background-image: url(../img/vk.svg);
+        }
+        &_youtube {
+            background-image: url(../img/youtube.svg);
+        }
+        &_telegram {
+            background-image: url(../img/telegram.svg);
+        }
+        &:hover {
+            opacity: .75;
+        }
+    }
+}
+.mobile {
+    display: none;
+}
+
 
 @import '_header.scss';
 @import '_promo.scss';
@@ -92,5 +133,6 @@ body {
 @import '_about.scss';
 @import '_rew.scss';
 @import '_contacts.scss';
+@import '_footer.scss';
 
 @import '_media.scss';
